@@ -40,13 +40,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-5 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
-        My name is Siddharth Yadav and I'm a skilled software developer with
-        experience in Web Development and Machine Learning, and expertise in
-        tech-stacks like JavaScript, ReactJS, C++, NodeJs, Pandas, Matplotlib
-        and Seaborn. I'm Responsible, organized, and problem solver. Work well
-        in a team and a quick learner. I am excited about the prospect of
-        contributing my skills and dedication to meaningful projects that push
-        the boundaries of what technology can achieve.
+        My name is Siddharth Yadav, and I am a skilled software developer with
+        experience in Web Development and Machine Learning. I possess expertise
+        in tech stacks including JavaScript, ReactJS, C++, Node.js, Pandas,
+        Matplotlib, and Seaborn. I am responsible, organized, and a problem
+        solver. I excel in teamwork and am a quick learner. I am enthusiastic
+        about the opportunity to contribute my skills and dedication to
+        meaningful projects that push the boundaries of what technology can
+        achieve.
       </motion.p>
 
       <motion.div variants={textVariant()}>
@@ -58,11 +59,19 @@ const About = () => {
         className="mt-5 text-secondary text-[17px] max-w-4xl leading-[30px] text-bold"
       >
         <ul className="mt-3 list-disc ml-5 space-y-2">
-            {educations.map((education,index)=>(
-              <li key={index} className="text-secondary text-[18px] pl-1 font-bold">
-                {education.institution} <p className="font-light text-secondary"> {education.degree} <span className="font-bold">{education.result}</span> </p>
-              </li>
-            ))}
+          {educations.map((education, index) => (
+            <li
+              key={index}
+              className="text-secondary text-[18px] pl-1 font-bold"
+            >
+              {education.institution}{" "}
+              <p className="font-light text-secondary">
+                {" "}
+                {education.degree}{" "}
+                <span className="font-bold">{education.result}</span>{" "}
+              </p>
+            </li>
+          ))}
         </ul>
       </motion.p>
 
